@@ -1,0 +1,26 @@
+from utils import load_image, load_model, predict_logo,get_predicted,get_classes
+
+
+
+def main():
+    logos = get_classes(r"C:\Users\0xdan\Documents\CS\Catergories\Image and Video Processing\ImageRecognition\BrandLogoPredictor\data")
+    # Define the path to the input image
+    image_path = r"C:\Users\0xdan\Documents\CS\Catergories\Image and Video Processing\ImageRecognition\BrandLogoPredictor\tests\testimg2.png"
+
+    # Load and preprocess the image
+    image = load_image(image_path)
+
+    # Load the pre-trained model
+    model_path = r"C:\Users\0xdan\Documents\CS\Catergories\Image and Video Processing\ImageRecognition\BrandLogoPredictor\models\model.h5"
+    model = load_model(model_path)
+
+    # Predict the company logo
+    predicted_logo = predict_logo(model, image)
+
+    # Print the predicted company logo
+    print("Predicted Company Index:", predicted_logo)
+    print("Predicted Company Logo:", get_predicted(logos,predicted_logo))
+
+
+if __name__ == "__main__":
+    main()
