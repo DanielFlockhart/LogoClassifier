@@ -3,15 +3,16 @@ from utils import load_image, load_model, predict_logo,get_predicted,get_classes
 
 
 def main():
-    logos = get_classes(r"C:\Users\0xdan\Documents\CS\Catergories\Image and Video Processing\ImageRecognition\BrandLogoPredictor\data")
+    # Get all class labels
+    logos = get_classes("dataset_folder_path")
     # Define the path to the input image
-    image_path = r"C:\Users\0xdan\Documents\CS\Catergories\Image and Video Processing\ImageRecognition\BrandLogoPredictor\tests\testimg2.png"
+    image_path ="test_img_folder_path"
 
     # Load and preprocess the image
     image = load_image(image_path)
 
     # Load the pre-trained model
-    model_path = r"C:\Users\0xdan\Documents\CS\Catergories\Image and Video Processing\ImageRecognition\BrandLogoPredictor\models\model.h5"
+    model_path = "model_path"
     model = load_model(model_path)
 
     # Predict the company logo

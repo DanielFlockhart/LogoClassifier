@@ -75,7 +75,7 @@ def train_model(train_data_dir, validation_data_dir, model_save_path):
 
 
 if __name__ == "__main__":
-    train_data_dir = r"C:\Users\0xdan\Documents\CS\Catergories\Image and Video Processing\ImageRecognition\BrandLogoPredictor\data"
-    validation_data_dir = r"C:\Users\0xdan\Documents\CS\Catergories\Image and Video Processing\ImageRecognition\BrandLogoPredictor\data"
-    model_save_path =r"C:\Users\0xdan\Documents\CS\Catergories\Image and Video Processing\ImageRecognition\BrandLogoPredictor\models\model.h5"
+    train_data_dir = "training_data_folder"
+    validation_data_dir = "validation_data_folder"
+    model_save_path ="model_path"
     train_model(train_data_dir, validation_data_dir, model_save_path)
