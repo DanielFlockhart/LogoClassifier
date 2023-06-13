@@ -71,3 +71,6 @@ The Logo Classifier allows you to predict the company logo from an input image. 
 ## Contributing
 
 Contributions to the Logo Classifier project are highly appreciated.
+
+
+This Project is from a little while ago, I am currently going through old projects and cleaning them up for GitHub
